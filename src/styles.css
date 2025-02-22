@@ -1,0 +1,108 @@
+/* CV Base Styles */
+:root {
+  --background: #c3c0ba;
+  --white: #fff;
+  --one: #c3266f;
+  --two: #743578;
+  --black: #54585d;
+  --process: #a5a5a5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+body {
+  background: var(--background);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 20px 0;
+}
+
+/* Iframe Container */
+#content-container {
+  display: flex;
+  flex-direction: row; /* Use 'column' to stack vertically */
+  gap: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+
+iframe {
+  flex: 1;
+  height: 600px;
+  border: 1px solid #ccc;
+}
+
+/* Main content for About and Contact pages */
+main {
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 30px;
+  color: var(--one);
+  margin-bottom: 10px;
+}
+
+main h3 {
+  font-size: 24px;
+  color: var(--two);
+  margin: 10px 0;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background: var(--black);
+}
+
+/* Contact Page Styles */
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-list .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.contact-list .text a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+/* Footer */
+footer p {
+  margin: 20px 0;
+  font-size: 14px;
+  color: var(--black);
+}
+
+/* (Additional resume-specific styles from your provided CSS can be added here) */
